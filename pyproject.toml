@@ -1,0 +1,19 @@
+[project]
+name = "bigbee-core"
+version = "0.1.0"
+description = "library for code shared across Bigbee assets."
+authors = [{ name = "Joseph Villa", email = "joseph@bigbeelabs.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "alembic",
+    "sqlalchemy",
+]
+
+[tool.poetry]
+packages = [{ include = "bigbee_core" }]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

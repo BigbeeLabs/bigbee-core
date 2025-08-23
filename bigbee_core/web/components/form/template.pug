@@ -1,0 +1,7 @@
+// bigbee_core/web/components/form/template.pug
+form(method=method action=action data-remote=remote data-initializers=initializers)
+  .form-fields
+    input(type="hidden" name="csrftoken" value=csrf_token)
+    = form_fields
+  .buttons
+    = buttons

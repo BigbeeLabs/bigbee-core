@@ -29,3 +29,6 @@ build/
 
 # Seeds and data you don't want in Git
 seeds/
+file_dumps/
+dump_files/
+bigbee_core/dump_files

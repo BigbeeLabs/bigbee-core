@@ -1,0 +1,25 @@
+// bigbee_core/web/components/text_input/template.pug
+div.form-field-group(class=group_classes data-initializers=initializers)
+  label(for=id class=label_classes)= label
+  input(
+    id=id
+    type=input_type     // ← was "text"
+    name=name
+    class=input_classes
+    value=value
+    placeholder=placeholder
+    required=required
+    disabled=disabled
+    readonly=readonly
+    autocomplete=autocomplete
+    inputmode=inputmode
+    pattern=pattern
+    maxlength=maxlength
+    minlength=minlength
+    aria-describedby=described_by
+    aria-invalid=aria_invalid
+  )
+  if help_text
+    div.form-help(id=help_id)= help_text
+  if error_text
+    div.form-error(id=error_id role="alert")= error_text
